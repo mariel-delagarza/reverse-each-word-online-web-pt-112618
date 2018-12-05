@@ -1,15 +1,25 @@
-def reverse_each_word(sentence)
-  words = sentence.split
-  words.each do |word|
-    word.reverse!
-  end
-  words.join(" ")
-end
+# def reverse_each_word(sentence)
+#   words = sentence.split
+#   words.each do |word|
+#     word.reverse!
+#   end
+#   words.join(" ")
+# end
+#
+# def reverse_each_word(sentence)
+#   words = sentence.split
+#   words.collect do |word|
+#     word.reverse!
+#   end
+#   words.join(" ")
+# end
 
-def reverse_each_word(sentence)
-  words = sentence.split
-  words.collect do |word|
-    word.reverse!
+def reverse_each_word(sentence1)
+  sentence1 = sentence1.split
+  #reversed_string = []
+  sentence1.each do |word|
+    sentence1.reverse!
   end
-  words.join(" ")
-end 
+  #return reversed_string.join('')
+  sentence1.join(" ")
+end
